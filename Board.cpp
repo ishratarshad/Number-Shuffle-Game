@@ -1,5 +1,6 @@
 #include "Board.hpp"
 #include <iostream>
+<<<<<<< HEAD
 #include <vector>
 #include <cstdlib> 
 #include <iomanip>
@@ -11,6 +12,12 @@ using namespace std;
 
 
  Board::Board() {
+=======
+using namespace std;
+
+// 2.1 The default constructor Board()
+Board::Board() {
+>>>>>>> 69f024c84d70847a666ae5c8ed359a56af0354c3
     numRows = 3;
     numCols = 3;
 
@@ -18,7 +25,21 @@ using namespace std;
     for (int i = 0; i < numRows; ++i) {
         panel[i] = new int[numCols];
     }
+<<<<<<< HEAD
     randomize(); 
+=======
+
+    int value = 1;
+    for (int row = 0; row < numRows; ++row) {
+        for (int col = 0; col < numCols; ++col) {
+            panel[row][col] = value++;
+        }
+    }
+
+    emptyCellRow = numRows - 1;
+    emptyCellCol = numCols - 1;
+    numCorrect = 0;
+>>>>>>> 69f024c84d70847a666ae5c8ed359a56af0354c3
 }
 
 //2.2 A nondefault constructor Board(int m, int n)
@@ -36,7 +57,20 @@ Board::Board(int m, int n) {
         panel[i] = new int[numCols];
     }
 
+<<<<<<< HEAD
     randomize();
+=======
+    int value = 1;
+    for (int row = 0; row < numRows; ++row) {
+        for (int col = 0; col < numCols; ++col) {
+            panel[row][col] = value++;
+        }
+    }
+
+    emptyCellRow = numRows - 1;
+    emptyCellCol = numCols - 1;
+    numCorrect = 0;
+>>>>>>> 69f024c84d70847a666ae5c8ed359a56af0354c3
 }
 
 // 2.3 A nondefault constructor Board(int** arr, int m, int n)
@@ -48,15 +82,26 @@ Board::Board(int** arr, int m, int n) : Board(m, n) {
         }
     }
 
+<<<<<<< HEAD
     getInfo();
 }
 
 // 2.4 The destructor
+=======
+    emptyCellRow = numRows - 1;
+    emptyCellCol = numCols - 1;
+    numCorrect = 0;
+}
+
+// 2.4 The destructor
+
+>>>>>>> 69f024c84d70847a666ae5c8ed359a56af0354c3
 Board::~Board() {
     for (int i = 0; i < numRows; ++i) {
         delete[] panel[i];
     }
     delete[] panel;
+<<<<<<< HEAD
     panel = nullptr;
 }
 
@@ -289,3 +334,7 @@ void Board::play() {
 
     std::cout << "\nCongratulations. Total number of moves is " << move << "." << std::endl;
 }
+=======
+}
+
+>>>>>>> 69f024c84d70847a666ae5c8ed359a56af0354c3
