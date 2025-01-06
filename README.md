@@ -12,7 +12,7 @@ Features:
 - Responsive Design: Sleek and professional UI with a pink and blue gradient background.
 
 How to Play
-1. Visit the game at: https://number-shuffle-game-web.onrender.com
+1. Visit the game at: https://number-shuffle-game.onrender.com
 3. Select a board size (3x3, 4x4, or 6x6).
 4. Use arrow keys to rearrange the numbers into ascending order.
 5. Complete the puzzle in the fewest moves and shortest time possible!
