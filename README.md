@@ -1,4 +1,4 @@
-Number Shuffle Game Web
+## Number Shuffle Game Web
 Overview:
 
 The Number Shuffle Game Web is an interactive puzzle game that challenges players to rearrange shuffled numbers into the correct order. The game features customizable grid sizes, a move counter, and a timer for added excitement.
